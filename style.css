@@ -1,0 +1,463 @@
+/*home*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');  /* https://fonts.google.com/ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #181818;          /*#4a2d70;*/
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    background-color: #7450d1;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 10%;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+/*https://codepen.io/team/css-tricks/pen/xxPOgmZ*/
+
+#links1, #links2, #links3, #links4, #links5{
+    position: relative;
+    color: white;
+  }
+  
+#links1::before, #links2::before, #links3::before, #links4::before, #links5::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+#links1:hover::before, #links2:hover::before, #links3:hover::before, #links4:hover::before, #links5:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/*termina aqui*/
+
+#introducao{
+    margin: auto;
+    margin-top: 5%;
+    width: 55%;
+}
+
+.titulo{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#estudo{
+    text-align: center;
+}
+
+.tituloFrontend{
+    text-align: center;
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+.aprendizado{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.progress{
+    height: 25px;
+    background-color: #e0e8eb;
+}
+
+.barra{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#html{
+    background-color:  #e54c21;
+    color: rgb(22, 21, 21);
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+#css{
+    background-color: #264de4;
+    color: rgb(22, 21, 21);
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+#js{
+    background-color:  #d6ba32;
+    color: rgb(22, 21, 21);
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+#bootstrap{
+    background-color: #7919e7;
+    color: rgb(22, 21, 21);
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+#php{
+    background-color: #6c7eb7;
+    color: rgb(22, 21, 21);
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+#banco{
+    background-color:  #db7533;
+    color: rgb(22, 21, 21);
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+/* bibliografia */
+
+#sobre{
+    width: 70%;
+    text-align: left;
+    margin: auto;
+    padding: 2%;
+}
+
+#sobreflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#imgBibliografia{
+    width: 30%;
+    border: 6px solid black;
+    border-radius: 50%;
+}
+
+#conteudo{
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+
+#contatos{
+    width: 100%;
+}
+
+#cont{
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contato{
+    transition: 0.5s;
+}
+
+.contato:hover{
+    transition: 0.5s;
+    color: #7450d1;
+}
+
+.meioContato{
+    margin: 30px;
+}
+
+/* projetos */
+
+#introducaoProjeto{
+    text-align: center;
+    margin: 2%;
+}
+
+#tituloProjeto{
+    margin: 1%;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projetos{
+    width: 40%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgProjeto{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.caixaLink{
+    width: 100%;
+}
+
+#linkProjeto1, #linkProjeto2, #linkProjeto3, #linkProjeto4, #linkProjeto5, #linkProjeto6{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #c0b0e8;     /*#7dccab;*/
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*link*/
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#linkTopo{
+    transition: 0.5s;
+}
+
+#linkTopo:hover{
+    transition: 1s;
+    color: #ffffff;
+}
+
+/* footer */
+
+footer{
+    background-color: #7450d1;          /*#4a2d70;*/
+    text-align: center;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+.redesSociais{
+    width: 30px;
+    border-radius: 50%;
+}
+
+#redes1, #redes2, #redes3, #redes4 {
+    border: 2px outset white;
+    transition: 1s;
+}
+
+#redes1:hover, #redes2:hover, #redes3:hover, #redes4:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+#caixaLink{
+    width: 150px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 1%;
+    margin: auto;
+}
+
+#caixaLink{
+    transition: 0.5s;
+}
+
+#caixaLink:hover{
+    transition: 1s;
+    background-color: #251b3f;
+}
+
+.mb-4 {
+    margin-bottom: 0px;
+}
+
+/* créditos */
+
+#tituloCreditos{
+    margin-top: 40px;
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+#caixaCreditos{
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px dashed white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.creditos{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* ultimas mudanças */
+
+#subTitulo{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .aprendizado, #introducao{
+        width: 90%;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .projetos{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 3000px) {
+    *{
+        font-size: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #logo{
+        width: 350px;
+        height: 350px;
+    }
+
+    .navbar-nav{
+        margin-left: 100px;
+        font-size: 50px;
+    }
+
+    footer{
+        height: 700px;
+    }
+
+    .mb-4{
+        height: 50px;
+        font-size: 40px
+    }
+
+    #caixaLink{
+        width: 500px;
+        font-size: 50px;
+    }
+
+    .redesSociais{
+        width: 100px;
+    }
+
+    .aprendizado, #introducao{
+        width: 60%;
+        font-size: 100px;
+    }
+
+    .progress{
+        height: 80px;
+    }
+
+    #html, #css, #js, #bootstrap, #php, #banco{
+        font-size: 70px;
+    }
+
+    .container.p-4{
+        height: 320px;
+    }
+
+    #tituloProjeto{
+        font-size: 90px;
+    }
+    
+    #subTitulo{
+        font-size: 60px;
+    }
+
+    .projetos{
+        width: 1250px;
+        margin-bottom: 75px;
+    }
+    
+    .imgProjeto{
+        width: 1250px;
+        height: 500px;
+        border-radius: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .caixaLink{
+        width: 100%;
+    }
+    
+    #linkProjeto1, #linkProjeto2, #linkProjeto3, #linkProjeto4, #linkProjeto5, #linkProjeto6{
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    #tituloCreditos{
+        font-size: 100px;
+    }
+
+    b, .contato, h4{
+        font-size: 65px;
+    }
+
+    .creditos{
+        margin-top: 160px;
+        margin-bottom: 160px;
+    }
+
+    #caixaCreditos{
+        margin-top: 100px;
+    }
+
+}
